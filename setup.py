@@ -1,0 +1,36 @@
+from setuptools import setup, find_packages
+
+REQUIRED = [
+    'jupyterlab>=4.0.0',
+    'scanpy>=1.10.3',
+    'scanpy[leiden]>=1.10.3',
+    'louvain>=0.8.2',
+    'anndata>=0.9.1, <=0.10.9',
+    'gprofiler-official>=1.0.0',
+    'POT>=0.9.4',
+    'scipy>=1.14.1',
+    'torchdata>=0.7.1, <=0.7.1',
+    'idna>=3.4',
+    'plotly>=5.0.0, <=5.24.1',
+    'pydantic>=2.9.2',
+    'adjustText>=1.3.0',
+    'charset-normalizer>=2.1.1',
+    'PyYAML>=6.0',
+    'numpy>=1.26.0, <1.26.4',
+    'numba>=0.59.0, <=0.60.0',
+    'pandas>=2.2.3',
+    'ipykernel>=6.29.5',
+    'ipython>=8.27.0',
+    'rpy2>=3.5.1, <=3.5.10',  # linux?
+    # 'squidpy>=1.6.1, <=1.6.1',
+    # 'dask>=2024.4.1, <=2024.12.1',
+    # 'opencv-python>=4.10.0.84, <=4.10.0.84',
+]
+setup(name='MetaSAF',
+      author='Zhen-Hao Guo',
+      author_email='guozhenhao17@mails.ucas.ac.cn',
+      url='https://github.com/CocoGzh/MetaSAF',
+      version='0.0.1',
+      packages=find_packages(),
+      install_requires=REQUIRED,
+      )
